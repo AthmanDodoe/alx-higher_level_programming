@@ -1,7 +1,3 @@
 #!/usr/bin/python3
-from multiprocessing.sharedctypes import Value
-
-
-def multiply_by_2(a_dictionary):
-    a_dictionary = Value * 2
-    return a_dictionary
+def multiply_by_2(my_dict):
+    return {key: value * 2 for key, value in my_dict.items()}
